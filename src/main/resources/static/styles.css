@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #162130;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 28px;
+  background: #1d3458;
+  color: #fff;
+}
+
+.topbar a {
+  color: #d8e4ff;
+  margin-left: 14px;
+  text-decoration: none;
+}
+
+.shell {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel,
+.cards article,
+.record-list li,
+.form {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 12px 26px rgba(21, 30, 48, 0.08);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.record-list {
+  list-style: none;
+  padding: 0;
+}
+
+.record-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #cdd7e2;
+}
+
+button {
+  background: #2058ff;
+  color: #fff;
+  cursor: pointer;
+}

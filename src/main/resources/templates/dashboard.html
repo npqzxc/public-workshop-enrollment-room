@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8" />
+  <title th:text="${title}"></title>
+  <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+  <header class="topbar"><h1 th:text="${title}"></h1><nav><a href="/">仪表盘</a><a href="/records">列表</a><a href="/create">新建</a></nav></header>
+  <main class="shell">
+    <section class="panel">
+      <h2>仪表盘</h2>
+      <div class="cards">
+        <article><span>总记录</span><strong th:text="${payload.total}"></strong></article>
+        <article><span>进行中</span><strong th:text="${payload.active}"></strong></article>
+        <article><span>高优先级</span><strong th:text="${payload.highPriority}"></strong></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
